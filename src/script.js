@@ -15,9 +15,9 @@ function lastClickedFunc(buttonId) {
         button[0].classList.replace('bg-orange-500', 'bg-slate-700');
         button[0].classList.replace(
             'hover:bg-orange-400',
-            'hover:bg-slate-600'
+            'hover:bg-slate-400'
         );
-        button[0].classList.remove('text-black');
+        button[0].classList.remove('text-white');
 
         return (clicked = false);
     }
@@ -29,8 +29,8 @@ function ifClicked(buttonId, numberButton) {
     lastClickedFunc(buttonId);
 
     button[0].classList.replace('bg-slate-700', 'bg-orange-500');
-    button[0].classList.replace('hover:bg-slate-600', 'hover:bg-orange-400');
-    button[0].classList.add('text-black');
+    button[0].classList.replace('hover:bg-slate-400', 'hover:bg-orange-400');
+    button[0].classList.add('text-white');
 
     clicked = true;
 
