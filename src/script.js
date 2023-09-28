@@ -64,6 +64,6 @@ b5.addEventListener('click', () => {
 sub.addEventListener('click', () => {
     if (selectedNumber === 0) {
         alert('Please select a number');
-        preventDefault();
+        event.preventDefault();
     }
 });
