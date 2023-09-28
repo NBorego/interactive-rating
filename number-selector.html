@@ -25,7 +25,7 @@
         class="bg-slate-900 font-Overpass-Font h-screen w-screen flex items-center justify-center"
     >
         <main
-            class="bg-slate-800 w-80 sm:w-96 rounded-xl shadow-md p-6 flex flex-col justify-center items-center sm:rounded-3xl"
+            class="bg-slate-800 w-80 rounded-xl shadow-md p-6 flex flex-col items-center sm:rounded-3xl"
         >
             <section class="">
                 <img
@@ -52,7 +52,6 @@
         </main>
         <script>
             let response = document.getElementById('response');
-
             var selectedNumber = localStorage.getItem('selectedNumber');
 
             response.innerText = `You selected ${selectedNumber} out of 5`;

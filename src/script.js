@@ -3,6 +3,7 @@ var b2 = document.getElementById('button-2');
 var b3 = document.getElementById('button-3');
 var b4 = document.getElementById('button-4');
 var b5 = document.getElementById('button-5');
+var sub = document.getElementById('sub');
 
 var clicked = null;
 var selectedNumber = 0;
@@ -60,4 +61,9 @@ b5.addEventListener('click', () => {
     ifClicked(b5, 5);
 });
 
-ifClicked(b3, 3);
+sub.addEventListener('click', () => {
+    if (selectedNumber === 0) {
+        alert('Please select a number');
+        preventDefault();
+    }
+});
