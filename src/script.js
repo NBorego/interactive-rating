@@ -29,6 +29,15 @@ function ifClicked(buttonId, numberButton) {
 
     lastClickedFunc(buttonId);
 
+    if (clicked === true) {
+        button[0].classList.replace('bg-orange-500', 'bg-slate-700');
+        button[0].classList.replace(
+            'hover:bg-orange-400',
+            'hover:bg-slate-400'
+        );
+        button[0].classList.remove('text-white');
+        return (clicked = false);
+    }
     button[0].classList.replace('bg-slate-700', 'bg-orange-500');
     button[0].classList.replace('hover:bg-slate-400', 'hover:bg-orange-400');
     button[0].classList.add('text-white');
