@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Tailwind -->
+        <link href="/dist/output.css" rel="stylesheet" />
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <title>Interactive rating component</title>
+    </head>
+    <body
+        class="bg-slate-900 font-Overpass-Font h-screen w-screen flex items-center justify-center"
+    >
+        <main
+            class="bg-slate-800 w-96 rounded-xl shadow-md p-8 space-y-6 md:rounded-3xl"
+        >
+            <img
+                src="../images/icon-star.svg"
+                alt="Star Icon"
+                class="bg-slate-700 p-3 rounded-full"
+            />
+
+            <article>
+                <h1 class="text-white text-2xl font-bold mb-4 md:text-3xl">
+                    How did we do?
+                </h1>
+
+                <p class="text-zinc-400 text-sm sm:text-base">
+                    Please let us know how we did with your support request. All
+                    feedback is appreciated to help us improve our offering!
+                </p>
+            </article>
+            <div class="flex justify-around text-zinc-400">
+                <button
+                    id="button-1"
+                    class="text-center pt-1 bg-slate-700 w-10 h-10 sm:w-12 sm:h-12 rounded-full hover:bg-slate-600 cursor-pointer transition-all"
+                >
+                    1
+                </button>
+                <button
+                    id="button-2"
+                    class="text-center pt-1 bg-slate-700 w-10 h-10 sm:w-12 sm:h-12 rounded-full hover:bg-slate-600 cursor-pointer transition-all"
+                >
+                    2
+                </button>
+                <button
+                    id="button-3"
+                    class="text-center pt-1 bg-slate-700 w-10 h-10 sm:w-12 sm:h-12 rounded-full hover:bg-slate-600 cursor-pointer transition-all"
+                >
+                    3
+                </button>
+                <button
+                    id="button-4"
+                    class="text-center pt-1 bg-slate-700 w-10 h-10 sm:w-12 sm:h-12 rounded-full hover:bg-slate-600 cursor-pointer transition-all"
+                >
+                    4
+                </button>
+                <button
+                    id="button-5"
+                    class="text-center pt-1 bg-slate-700 w-10 h-10 sm:w-12 sm:h-12 rounded-full hover:bg-slate-600 cursor-pointer transition-all"
+                >
+                    5
+                </button>
+            </div>
+            <form action="number-selector.html" method="get">
+                <input
+                    type="submit"
+                    value="submit"
+                    class="block bg-orange-500 rounded-3xl w-full uppercase text-white py-3 pt-4 tracking-wider hover:bg-white hover:text-orange-500 transition-all hover:scale-105 cursor-pointer text-center"
+                />
+            </form>
+        </main>
+        <!-- Script -->
+        <script src="./script.js"></script>
+    </body>
+</html>

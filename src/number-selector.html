@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Tailwind -->
+        <link href="/dist/output.css" rel="stylesheet" />
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <title>Interactive rating component</title>
+    </head>
+    <body
+        class="bg-slate-900 font-Overpass-Font h-screen w-screen flex items-center justify-center"
+    >
+        <main
+            class="bg-slate-800 w-80 sm:w-96 rounded-xl shadow-md p-6 flex flex-col justify-center items-center sm:rounded-3xl"
+        >
+            <section class="">
+                <img
+                    src="../images/illustration-thank-you.svg"
+                    alt="Thank You Image"
+                />
+                <output
+                    id="response"
+                    class="my-6 block bg-slate-700 py-1 pt-1.5 text-orange-500 px-3 rounded-2xl"
+                >
+                </output>
+            </section>
+
+            <article class="text-center">
+                <h1 class="text-white text-2xl sm:text-3xl font-bold mb-4">
+                    Thank you!
+                </h1>
+
+                <p class="text-zinc-400 text-sm sm:text-base leading-6">
+                    We appreciate you taking the time to give a rating. If you
+                    ever need more support, don't hesitate to get in touch!
+                </p>
+            </article>
+        </main>
+        <script>
+            let response = document.getElementById('response');
+
+            var selectedNumber = localStorage.getItem('selectedNumber');
+
+            response.innerText = `You selected ${selectedNumber} out of 5`;
+        </script>
+    </body>
+</html>
